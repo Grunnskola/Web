@@ -9,14 +9,14 @@ import com.yerokhava.entity.Newspaper;
  */
 public class EditionFactory {
 
-public static Edition getEdition(String s){
+public static Edition getEdition(String type, String name , int price , String param1, String param2){
 
   // Edition subscr = null; //equi
-    if(s.equals("Journal")) {
-        return new Journal();
+    if(type.equals("Journal")) {
+        return new Journal(name,price,param1,param2);
     }
-    if(s.equals("Newspaper")) {
-       return new Newspaper();
+    if(type.equals("Newspaper")) {
+       return new Newspaper(name,price,param1,param2);
     }
     return null;
 }

@@ -7,14 +7,27 @@ import java.util.List;
  */
 public class MapOfEdition {
 
-    public static List<Object> listOfEdition = new ArrayList<Object>();
 
-    public static List<Object> getListOfEdition() {
+
+    public static List<Edition> listOfEdition = new ArrayList<Edition>();
+
+
+    public static List<Edition> getListOfEdition() {
         return listOfEdition;
+
     }
 
-    public static void setListOfEdition(List<Object> listOfEdition) {
-        MapOfEdition.listOfEdition = listOfEdition;
+    private static   DateOfEdition date = new DateOfEdition();
+    public static DateOfEdition getDateOfEdition() {
+        return date;
     }
+    public static void setDateOfEdition(DateOfEdition time) {
+       date = time;
+    }
+
+
+    /*public static void setListOfEdition(List<Edition> listOfEdition) {
+        MapOfEdition.listOfEdition = listOfEdition;
+    }*/
 
 }

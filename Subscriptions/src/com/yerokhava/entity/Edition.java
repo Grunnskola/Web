@@ -23,7 +23,7 @@ public abstract class Edition {
     public void setName(String name) {
         Name = name;
     }
-    public void includeInSubscribe(){};
-    public void excludeFromSubscribe(){};
+  //  public void includeInSubscribe(){};
+  //public void excludeFromSubscribe(){};
 
 }

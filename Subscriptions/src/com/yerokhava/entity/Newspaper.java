@@ -24,7 +24,12 @@ public class Newspaper extends Edition {
         Efficiency = efficiency;
     }
 
-
+    public Newspaper( String name , int price , String efficiency, String crossword){
+        this.setName(name);
+        this.setPrice(price);
+        this.setEfficiency(efficiency);
+        this.setCrossword(crossword);
+    }
 
 
 }
