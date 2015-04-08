@@ -11,7 +11,6 @@ public class EditionFactory {
 
 public static Edition getEdition(String type, String name , int price , String param1, String param2){
 
-  // Edition subscr = null; //equi
     if(type.equals("Journal")) {
         return new Journal(name,price,param1,param2);
     }

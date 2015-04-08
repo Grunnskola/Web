@@ -11,6 +11,13 @@ public class Journal extends Edition {
 
     private String Version;
 
+    public Journal( String name , int price , String cover, String version){
+        this.setName(name);
+        this.setPrice(price);
+        this.setCover(cover);
+        this.setVersion(version);
+    }
+
     public String getCover() {
         return Cover;
     }
@@ -27,11 +34,6 @@ public class Journal extends Edition {
         this.Version = version;
     }
 
-    public Journal( String name , int price , String cover, String version){
-        this.setName(name);
-        this.setPrice(price);
-        this.setCover(cover);
-        this.setVersion(version);
-    }
+
 
 }

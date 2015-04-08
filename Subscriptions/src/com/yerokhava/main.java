@@ -11,17 +11,16 @@ public class Main {
 
     public static void main(String[] args){
 
+    Manager myMng = new Manager();
+    View vw = new View(myMng);
 
-        Manager myMng = new Manager();
-        View vw = new View(myMng);
+    View.addEdition("Journal", "Esquire", 10, "HardCover", "Big");
+    View.addEdition("Newspaper", "Times", 5, "At the same time", "About science");
 
-        vw.addEdition("Journal","Esquire", 9999999, "middle" , "some");
-        vw.addEdition("Newspaper" ,"комсомолка" ,0 , "Putin is OK" , "nothing");
+    View.addData("Valid for six months");
 
-        vw.addData("unlim");
-
-        vw.showMeData();
-        vw.showMeMapOfEdition();
+    View.showMeData();
+    View.showMeMapOfEdition();
 
     }
 }

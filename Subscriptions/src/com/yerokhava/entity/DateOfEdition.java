@@ -8,13 +8,13 @@ public class DateOfEdition {
 
     private String date;
 
-
     public String getYear() {
         return date;
     }
 
-    public void setYear(String year) {
-        this.date = date;
+    public void setYear(String year)
+    {
+        this.date = year;
     }
 
 
